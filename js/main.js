@@ -48,4 +48,3 @@ modal.innerHTML = `
         </div>
     `;
 document.body.appendChild(modal);
-}
