@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="gu" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumbhan • Hometown Guide</title>
+
+    <!-- Main stylesheet (keep everything you have in it) -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- =============== NAVBAR ============== -->
+    <header>
+      <nav class="container">
+        <a href="#top" class="logo">Kumbhan</a>
+
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#top" class="active">Home</a>
+          <a href="culture.html">Culture</a>
+          <a href="temples.html">Temples</a>
+          <a href="festivals.html">Festivals</a>
+          <a href="education.html">Education</a>
+          <a href="healthcare.html">Healthcare</a>
+          <a href="Economy.html">Economy</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- =============== HERO ============== -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <h1>Welcome to Kumbhan</h1>
+        <p>
+          Discover our rich heritage, vibrant festivals and warm Gujarati
+          hospitality.
+        </p>
+        <a href="#about" class="cta-btn">Explore More</a>
+      </div>
+
+      <!-- bouncing arrow -->
+      <a
+        href="#about"
+        class="scroll-down"
+        aria-label="Scroll to About section"
+      ></a>
+    </section>
+
+    <!-- =============== ABOUT (full content) ============== -->
+    <main id="about" class="container about">
+      <!-- Overview -->
+      <section class="overview-card" style="margin: 2rem auto">
+        <h3>About Kumbhan</h3>
+        <p>
+          Kumbhan is a vibrant Gujarati village situated just 9 km from Mahuva
+          (our closest town and tehsil HQ) and about 100 km from the district
+          seat of Bhavnagar. Officially recognised as a
+          <em>gram panchayat</em>, it serves as a self‑governing hub for the
+          surrounding rural area.
+        </p>
+        <p>
+          According to the 2011 Census, Kumbhan spans
+          <strong>1,064&nbsp;hectares</strong>, supports a population of
+          <strong>5,426</strong> across <strong>857 households</strong>, and
+          balances tradition with progress through strong community initiatives,
+          agriculture, and local enterprise.
+        </p>
+      </section>
+
+      <!-- Fast facts -->
+      <section class="overview-section">
+        <div class="container overview-grid">
+          <!-- left side: Village Overview Table -->
+          <div class="overview-table">
+            <h3>Kumbhan - Village Overview</h3>
+            <table>
+              <tr>
+                <td>Gram Panchayat :</td>
+                <td>Kumbhan</td>
+              </tr>
+              <tr>
+                <td>Block / Taluka :</td>
+                <td>Mahuva</td>
+              </tr>
+              <tr>
+                <td>District :</td>
+                <td>Bhavnagar</td>
+              </tr>
+              <tr>
+                <td>State :</td>
+                <td>Gujarat</td>
+              </tr>
+              <tr>
+                <td>Pincode :</td>
+                <td>364145</td>
+              </tr>
+              <tr>
+                <td>Area :</td>
+                <td>1064.22 hectares</td>
+              </tr>
+              <tr>
+                <td>Sex Ratio (2011):</td>
+                <td>997</td>
+              </tr>
+              <tr>
+                <td>Population (2011):</td>
+                <td>5,426</td>
+              </tr>
+              <tr>
+                <td>Households :</td>
+                <td>857</td>
+              </tr>
+              <tr>
+                <td>Assembly Constituency :</td>
+                <td>Mahuva</td>
+              </tr>
+              <tr>
+                <td>Parliament Constituency :</td>
+                <td>Amreli</td>
+              </tr>
+              <tr>
+                <td>Nearest Town :</td>
+                <td>Mahuva (9 km)</td>
+              </tr>
+            </table>
+          </div>
+          <!-- right side: Map -->
+          <!-- Map column (place inside .overview-grid) -->
+          <div class="map-wrapper">
+            <h3>Where Is Kumbhan Village?</h3>
+
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14147.606395179724!2d71.6997815!3d21.151829799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be23c43a0d8a3a1%3A0xe2792034aec989a!2sKumbhan%2C%20Gujarat%20364290!5e1!3m2!1sen!2sin!4v1751997969774!5m2!1sen!2sin"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =============== FOOTER ============== -->
+    <footer>
+      <p>&copy; <span id="year"></span> Kumbhan Village Guide • Built with ❤</p>
+    </footer>
+
+    <!-- =============== SCRIPTS ============== -->
+    <script src="js/main.js" defer></script>
+    <script>
+      /* year in footer */
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      /* burger ▸ mobile‑nav toggle (skip if your main.js already does this) */
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("navLinks");
+      burger?.addEventListener("click", () => nav.classList.toggle("open"));
+    </script>
+  </body>
+</html>

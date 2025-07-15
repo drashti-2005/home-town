@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="gu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temples • Kumbhan Village Guide</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar (shared across pages) -->
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">Kumbhan</a>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="culture.html">Culture</a>
+          <a href="temples.html" class="active">Temples</a>
+          <a href="festivals.html">Festivals</a>
+          <a href="education.html">Education</a>
+          <a href="healthcare.html">Healthcare</a>
+          <a href="Economy.html">Economy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h2 class="temple head" style="padding: 0.5rem">
+        Temples &amp; Places of Worship
+      </h2>
+
+      <div class="temples-grid">
+        <!-- 1. Kumbhnath Mahadev Mandir -->
+        <article class="temple-card">
+          <figure class="temple-image">
+            <img
+              src="styles/images/kumbhnath.png"
+              alt="Kumbhnath Mahadev Mandir"
+            />
+          </figure>
+          <div class="temple-info">
+            <h3>Kumbhnath Mahadev Mandir</h3>
+            <p class="address">📍 Shiv Mandir Road, Kumbhan – 364290</p>
+            <p>
+              A beautifully structured Shiva temple with lion statues guarding
+              the entrance. Inside: sacred Shivling adorned with traditional
+              offerings.
+            </p>
+            <button
+              class="know-more-btn"
+              onclick="showTempleDetails('kumbhnath')"
+            >
+              Know More
+            </button>
+          </div>
+        </article>
+
+        <!-- 2. Jahal Ma Mandir -->
+        <article class="temple-card">
+          <figure class="temple-image">
+            <img src="styles/images/jahalma.png" alt="Jahal Ma Mandir" />
+          </figure>
+          <div class="temple-info">
+            <h3>Jahal Ma Mandir</h3>
+            <p class="address">Village Centre, Kumbhan</p>
+            <p>
+              Temple devoted to local goddess Jahal Ma, visited for blessings
+              and the village's protection.
+            </p>
+            <button
+              class="know-more-btn"
+              onclick="showTempleDetails('jahalma')"
+            >
+              Know More
+            </button>
+          </div>
+        </article>
+
+        <!-- 3. Bapa Sitaram Mandir -->
+        <article class="temple-card">
+          <figure class="temple-image">
+            <img src="styles/images/bapa.jpg" alt="Bapa Sitaram Mandir" />
+          </figure>
+          <div class="temple-info">
+            <h3>Bapa Sitaram Mandir</h3>
+            <p class="address">Near Primary School, Kumbhan</p>
+            <p>
+              Place of worship for devotees of Bapa Sitaram. Peaceful ambiance
+              for prayer and reflection.
+            </p>
+            <button
+              class="know-more-btn"
+              onclick="showTempleDetails('sitaram')"
+            >
+              Know More
+            </button>
+          </div>
+        </article>
+
+        <!-- 4. Ramji Mandir -->
+        <article class="temple-card">
+          <figure class="temple-image">
+            <img src="styles/images/ramji.png" alt="Ramji Mandir" />
+          </figure>
+          <div class="temple-info">
+            <h3>Ramji Mandir</h3>
+            <p class="address">Ramji Chowk, Kumbhan</p>
+            <p>
+              Hindu temple dedicated to Lord Ram, hosting bhajan evenings and
+              festive Ram Navami celebrations.
+            </p>
+            <button class="know-more-btn" onclick="showTempleDetails('ramji')">
+              Know More
+            </button>
+          </div>
+        </article>
+
+        <!-- 5. Shree Ramdevpir Bapa Temple -->
+        <article class="temple-card">
+          <figure class="temple-image">
+            <img
+              src="styles/images/ramapir.png"
+              alt="Shree Ramdevpir Bapa Temple"
+            />
+          </figure>
+          <div class="temple-info">
+            <h3>Shree Ramdevpir Bapa Temple</h3>
+            <p class="address">Ramdevpir Road, Kumbhan</p>
+            <p>
+              Dedicated to the revered saint of the region, attracting devotees
+              seeking blessings for prosperity and health.
+            </p>
+            <button
+              class="know-more-btn"
+              onclick="showTempleDetails('ramdevpir')"
+            >
+              Know More
+            </button>
+          </div>
+        </article>
+
+        <article class="temple-card">
+          <figure class="temple-image">
+            <img src="styles/images/majid.png" alt="Masjid-e-Noor" />
+          </figure>
+          <div class="temple-info">
+            <h3>Masjid-e-Noor</h3>
+            <p class="address">Main Bazaar Road, Kumbhan</p>
+            <p>
+              A sacred place for Muslims to perform Salah (namaz) and seek
+              spiritual closeness to Allah.
+            </p>
+            <button
+              class="know-more-btn"
+              onclick="showTempleDetails('masjidnoor')"
+            >
+              Know More
+            </button>
+            <div class="temple-details" id="masjidnoor" style="display: none">
+              <p>
+                Masjid-e-Noor serves not only as a place of prayer but also as a
+                center for learning, unity, and devotion. It plays a vital role
+                in community guidance, religious education, and brings people
+                together during special occasions like Ramadan and Eid. Through
+                daily prayers, Friday gatherings, and Islamic teachings, it
+                strengthens faith and fosters brotherhood within the Muslim
+                community.
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Kumbhan Village Guide • Built with ❤</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="gu" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Economy • Kumbhan Village</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">Kumbhan</a>
+
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="culture.html">Culture</a>
+          <a href="temples.html">Temples</a>
+          <a href="festivals.html">Festivals</a>
+          <a href="education.html">Education</a>
+          <a href="healthcare.html">Healthcare</a>
+          <a href="economy.html" class="active">Economy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container economy-page">
+      <section class="overview-section">
+        <h2>Economy of Kumbhan</h2>
+
+        <div class="overview-grid">
+          <!-- Agriculture Card -->
+          <div class="overview-card">
+            <h3>Agriculture</h3>
+            <p>
+              Farming is the backbone of Kumbhan's economy. The fertile land and
+              favorable climate allow for crops like <strong>onion</strong>,
+              <strong>groundnut</strong>, and <strong>cotton</strong>. Onion
+              farming is especially significant during the Rabi season.
+            </p>
+            <ul>
+              <li>Onion – Most profitable crop</li>
+              <li>Groundnut – Commonly grown during Kharif</li>
+              <li>Cotton – Grown occasionally due to price fluctuations</li>
+            </ul>
+            <img src="styles/images/farming.png" alt="Farming in Kumbhan" />
+          </div>
+
+          <!-- Trade & Small Businesses Card -->
+          <div class="overview-card">
+            <h3>Local Businesses</h3>
+            <p>
+              A number of families run <strong>grocery shops</strong>, hardware
+              stores, tea stalls, and small trade services. These shops play a
+              vital role in the village’s self-sustainability and support daily
+              needs.
+            </p>
+            <ul>
+              <li>Grocery and retail stores</li>
+              <li>Tea stalls and food vendors</li>
+              <li>Mobile repair and hardware shops</li>
+            </ul>
+            <img
+              src="styles/images/grocessory.png"
+              alt="Grocery shop in village"
+            />
+          </div>
+
+          <!-- Diamond Industry Card -->
+          <div class="overview-card">
+            <h3>Diamond Industry</h3>
+            <p>
+              A portion of the younger population commutes to
+              <strong>Mahuva</strong> and <strong>Surat</strong> to work in
+              diamond polishing factories. This sector offers stable employment,
+              especially for youth without farmland.
+            </p>
+            <ul>
+              <li>Diamond cutting and polishing jobs</li>
+              <li>Mostly male workers</li>
+              <li>Weekly commute or seasonal migration</li>
+            </ul>
+            <img src="styles/images/diomond.png" alt="Diamond work in Mahuva" />
+          </div>
+
+          <!-- Other Occupations Card -->
+          <div class="overview-card">
+            <h3>Other Occupations</h3>
+            <p>
+              Besides agriculture and trade, villagers also earn through
+              <strong>daily wage labor</strong>, transportation services,
+              tailoring, and home-based craft work. Some women make papad or
+              pickles for extra income.
+            </p>
+            <ul>
+              <li>Daily wage labor</li>
+              <li>Transportation (tractor, auto-rickshaw)</li>
+              <li>Women’s cottage industries</li>
+            </ul>
+            <img
+              src="styles/images/otheroccu.png"
+              alt="Diamond work in Mahuva"
+            />
+          </div>
+
+          <!-- Economic Challenges Card -->
+          <div class="overview-card">
+            <h3>Economic Challenges</h3>
+            <p>
+              Farmers face challenges like irregular rainfall, low market
+              prices, and high input costs. Access to modern machinery and
+              government schemes remains limited. Seasonal migration is common
+              during drought years.
+            </p>
+            <ul>
+              <li>Unpredictable climate conditions</li>
+              <li>Debt due to farming expenses</li>
+              <li>Limited irrigation in some areas</li>
+            </ul>
+            <img src="styles/images/fp.png" alt="Diamond work in Mahuva" />
+          </div>
+
+          <!-- Women's Role Card -->
+          <div class="overview-card">
+            <h3>Women & Economy</h3>
+            <p>
+              While most women are homemakers, many are now supporting their
+              families through <strong>micro-businesses</strong> such as sewing,
+              food preparation, and working in self-help groups (SHGs).
+            </p>
+            <ul>
+              <li>Self-help groups (SHGs)</li>
+              <li>Sewing and embroidery</li>
+              <li>Homemade snacks, pickles, and papads</li>
+            </ul>
+            <img src="styles/images/wE.png" alt="Diamond work in Mahuva" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy; <span id="year"></span> Kumbhan Village Guide • Built with ❤</p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      const burger = document.getElementById("burger");
+      const nav = document.getElementById("navLinks");
+      burger?.addEventListener("click", () => nav.classList.toggle("open"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="gu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare • Kumbhan Village Guide</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Sticky Navbar -->
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">Kumbhan</a>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="culture.html">Culture</a>
+          <a href="temples.html">Temples</a>
+          <a href="festivals.html">Festivals</a>
+          <a href="education.html">Education</a>
+          <a href="healthcare.html" class="active">Healthcare</a>
+          <a href="Economy.html">Economy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container" style="margin-top: 2rem">
+      <!-- Hospital Overview -->
+      <section>
+        <h2 style="text-align: center; margin-bottom: 1.25rem">
+          Government Hospital
+        </h2>
+        <div class="about-content" style="gap: 1.5rem">
+          <figure
+            class="temple-image"
+            style="aspect-ratio: 4/3; max-width: 480px"
+          >
+            <img
+              src="styles/images/gh.png"
+              alt="Government Hospital, Kumbhan"
+            />
+          </figure>
+          <div>
+            <p>
+              The Government Hospital in Kumbhan provides
+              <strong>basic outpatient care</strong>, a 24×7 emergency ward and
+              maternal health facilities. A trained medical officer, nursing
+              staff and visiting specialists ensure villagers get timely
+              treatment without travelling to the city.
+            </p>
+
+            <div class="info-grid" style="margin-top: 1.5rem">
+              <div class="info-item">
+                <span class="label">Beds</span><span class="value">20</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Doctors</span><span class="value">3</span>
+              </div>
+              <div class="info-item">
+                <span class="label">Ambulances</span
+                ><span class="value">1</span>
+              </div>
+              <div class="info-item">
+                <span class="label">OPD Hours</span
+                ><span class="value">9 AM – 1 PM, 4 PM – 6 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section style="margin-top: 3rem">
+        <h3 style="text-align: center; margin-bottom: 1rem">
+          Key Health Services
+        </h3>
+        <div
+          class="temples-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))"
+        >
+          <article class="temple-card">
+            <div class="temple-info">
+              <h4>🩺 Outpatient Clinic</h4>
+              <p>
+                Daily consultations for common illnesses and minor injuries.
+              </p>
+            </div>
+          </article>
+          <article class="temple-card">
+            <div class="temple-info">
+              <h4>👶 Maternal & Child Care</h4>
+              <p>ANC/PNC check‑ups, immunization and nutrition counselling.</p>
+            </div>
+          </article>
+          <article class="temple-card">
+            <div class="temple-info">
+              <h4>💉 Vaccination Centre</h4>
+              <p>Routine immunisation, seasonal drives, and COVID boosters.</p>
+            </div>
+          </article>
+          <article class="temple-card">
+            <div class="temple-info">
+              <h4>🩸 Pathology</h4>
+              <p>Basic lab tests: CBC, blood sugar, malaria screening.</p>
+            </div>
+          </article>
+          <article class="temple-card">
+            <div class="temple-info">
+              <h4>🚑 24×7 Emergency</h4>
+              <p>First aid, trauma stabilisation & ambulance referral.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Map & Emergency Contact -->
+      <section style="margin-top: 3rem">
+        <h3 style="text-align: center; margin-bottom: 1rem">
+          Find Us &amp; Helpline
+        </h3>
+        <div class="about-content" style="gap: 1.5rem">
+          <div
+            class="map-container"
+            id="hospitalMap"
+            aria-label="Hospital location"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8361.242666605125!2d71.70768171216072!3d21.1517012793213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be23c42c8721061%3A0x6918f1b21f68ead9!2sPrimary%20Health%20Center!5e1!3m2!1sen!2sin!4v1752212553862!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div
+            class="info-item"
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              padding: 1rem;
+              background-image: url('styles/images/ambulance.png');
+              background-size: cover;
+              background-position: center;
+              border-radius: 12px;
+              color: black;
+            "
+          >
+            <h4 style="margin-bottom: 0.5rem; font-size: 1.25rem">
+              Emergency 24×7
+            </h4>
+            <p style="font-size: 1.5rem; font-weight: 700">📞 108</p>
+            <p style="font-size: medium; max-width: 300px; font-weight: bold0">
+              Call toll‑free for ambulance assistance within Kumbhan.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Kumbhan Village Guide • Built with ❤</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+      // Year auto‑update
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Google Map for hospital only (separate from village map)
+      window.initHospitalMap = function () {
+        const hospital = { lat: 21.0795, lng: 71.765 }; // approx coords
+        const map = new google.maps.Map(
+          document.getElementById("hospitalMap"),
+          {
+            zoom: 15,
+            center: hospital,
+            disableDefaultUI: true,
+          }
+        );
+        new google.maps.Marker({
+          position: hospital,
+          map,
+          title: "Government Hospital",
+        });
+      };
+    </script>
+  </body>
+</html>

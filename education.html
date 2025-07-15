@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="gu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education • Kumbhan Village Guide</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Shared Navbar -->
+    <header>
+      <nav class="container">
+        <a href="index.html" class="logo">Kumbhan</a>
+        <div class="burger" id="burger">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="culture.html">Culture</a>
+          <a href="temples.html">Temples</a>
+          <a href="festivals.html">Festivals</a>
+          <a href="education.html" class="active">Education</a>
+          <a href="healthcare.html">Healthcare</a>
+          <a href="Economy.html">Economy</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <!-- School Cards -->
+      <section id="education" class="education-section">
+        <div class="container">
+          <h2>🏫 Education in Kumbhan</h2>
+          <p>
+            Kumbhan offers access to quality learning from basic literacy to
+            higher secondary level—all within the village.
+          </p>
+
+          <!-- School Cards Grid -->
+          <div class="temples-grid" style="margin-top: 2rem">
+            <!-- School 1 -->
+            <article class="temple-card">
+              <figure class="temple-image">
+                <img src="styles/images/kanya.png" alt="Primary School 1" />
+              </figure>
+              <div class="temple-info">
+                <h3>Kumbhan girls Primary School</h3>
+                <p class="address">
+                  Near jahalma Mandir(Village center), Kumbhan
+                </p>
+                <p>
+                  Dedicated to providing quality basic education with digital
+                  classrooms.
+                </p>
+              </div>
+            </article>
+
+            <!-- School 2 -->
+            <article class="temple-card">
+              <figure class="temple-image">
+                <img src="styles/images/boyss.jpg" alt="Primary School 2" />
+              </figure>
+              <div class="temple-info">
+                <h3>Kumbhan boys Primary School</h3>
+                <p class="address">Bapa Sitaram Road,, Kumbhan</p>
+                <p>
+                  A nurturing environment for early learners with play-based
+                  teaching.
+                </p>
+              </div>
+            </article>
+
+            <!-- Higher Secondary 1 -->
+            <article class="temple-card">
+              <figure class="temple-image">
+                <img
+                  src="styles/images/s.v.doshi.jpg"
+                  alt="Higher Secondary School 1"
+                />
+              </figure>
+              <div class="temple-info">
+                <h3>Shree s.v doshi High School</h3>
+                <p class="address">Near SBI Bank, Kumbhan</p>
+                <p>
+                  Arts and Commerce streams available. Well-equipped labs and
+                  library.
+                </p>
+              </div>
+            </article>
+
+            <!-- Higher Secondary 2 -->
+            <article class="temple-card">
+              <figure class="temple-image">
+                <img
+                  src="styles/images/rmsa.png"
+                  alt="Higher Secondary School 2"
+                />
+              </figure>
+              <div class="temple-info">
+                <h3>Kumbhan Higher Secondary School</h3>
+                <p class="address">Bapa Sitaram Road, Kumbhan</p>
+                <p>
+                  Arts and Commerce streams available.Empowering youth with
+                  career-oriented curriculum and experienced faculty.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Kumbhan Village Guide • Built with ❤</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
