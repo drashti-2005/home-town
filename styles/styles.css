@@ -168,7 +168,7 @@ nav {
 .hero {
  background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
-    url('/styles/images/bhavani.jpg') center/cover no-repeat;  color: #fff;
+    url('/public/images/bhavani.jpg') center/cover no-repeat;  color: #fff;
   text-align: center;
   padding: 7rem 1rem 6rem;
 }
@@ -613,7 +613,7 @@ padding: 0 1.5rem 0.3rem 1.5rem;
 .festivals-page .hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url('/styles/images/mixs.png') center/cover no-repeat;
+    url('/public/images/mixs.png') center/cover no-repeat;
 }
 
 footer {
