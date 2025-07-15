@@ -150,7 +150,7 @@ nav {
   .hero {
     background-image:
       linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.25)),
-      url("public/images/bhavani.jpg");
+      url('public/images/bhavani.jpg');
   }
 }
 /* --- Mobile (≤ 767 px) ------------------------------------- */
@@ -158,7 +158,7 @@ nav {
   .hero {
     background-image:
       linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.30)),
-      url("public/images/bhavani.jpg");
+      url('public/images/bhavani.jpg');
     background-position: top center; /* show focal area better */
   }
 }
@@ -166,7 +166,7 @@ nav {
 .hero {
  background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), 
-    url("public/images/bhavani.jpg") center/cover no-repeat;  color: #fff;
+    url('public/images/bhavani.jpg') center/cover no-repeat;  color: #fff;
   text-align: center;
   padding: 7rem 1rem 6rem;
 }
@@ -611,7 +611,7 @@ padding: 0 1.5rem 0.3rem 1.5rem;
 .festivals-page .hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url("public/images/mixs.png") center/cover no-repeat;
+    url('public/images/mixs.png') center/cover no-repeat;
 }
 
 footer {
