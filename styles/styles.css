@@ -608,11 +608,11 @@ padding: 0 1.5rem 0.3rem 1.5rem;
   color: #999;
   cursor: pointer;
 }
-.festivals-page .hero {
+/* .festivals-page .hero {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
     url('/public/images/mixs.png') center/cover no-repeat;
-}
+} */
 
 footer {
   text-align: center;
