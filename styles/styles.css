@@ -8,7 +8,7 @@
   --text-muted: #666;
   --radius: 8px;
 --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+}
 .custom-list {
   list-style-position: inside;
   
@@ -45,9 +45,7 @@ h2 {
   text-align: center;
 }
 
-section {
-  /* padding: 2rem 1rem; */
-}
+
 
 .container {
   width: min(1200px, 90%);
